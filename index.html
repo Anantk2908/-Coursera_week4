@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Assignment Solution for Module 4</title>
-    <script src="SpeakHello.js"></script>
-    <script src="SpeakGoodBye.js"></script>
-    <script src="script.js"></script>
-</head>
-
-<body>
-    <h1>Peer-graded Assignment: Module 4 Coding Assignment</h1>
-    <p>Kindly press Ctrl+Shift+I to open console to see the results</p>
-</body>
-
-</html>
+(function() {
+    var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+    for (var i = 0; i < names.length; i++) {
+        var firstLetter = names[i].charAt(0).toLowerCase();
+        if (firstLetter === 'j') {
+            byeSpeaker.speak(names[i]);
+        } else {
+            helloSpeaker.speak(names[i]);
+        }
+    }
+})();
